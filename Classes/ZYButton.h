@@ -1,50 +1,15 @@
-# ZYButton
+//
+//  ZYButton.h
+//  ReadBook
+//
+//  Created by xuzeyu on 2021/6/6.
+//  Copyright © 2021 xuzy. All rights reserved.
+//
 
-## 介绍
-原生UIButton 图片和文字布局是使用contentEdgeInsets和imageEdgeInsets参数设置，需要计算文字和图片的上下内边距，不好计算，不好维护。
-ZYButton 是对 UIButton的封装库，采用UIButton上面添加UILabel和UIImagevView的方式来实现原生contentEdgeInsets和imageEdgeInsets的功能布局，使用维护简单，功能丰富。
+#import <UIKit/UIKit.h>
 
-## 如何导入
-```
-pod 'ZYButton', :git => 'http://5dmg.cc:9997/xuzy/ZYButton.git' 
-pod 'ZYButton', :git => 'http://5dmg.cc:9997/xuzy/ZYButton.git', :tag => '0.0.1'
-```
+NS_ASSUME_NONNULL_BEGIN
 
-## 如何使用
-```objc
-ZYButton *button = [ZYButton buttonWithType:UIButtonTypeCustom];
-
-//设置Normal状态背景颜色
-[button setBackgroundColor:[UIColor redColor] forState:UIControlStateNormal]; 
-
-//设置Normal状态边线
-[button setBorderColor:[UIColor redColor] forState:UIControlStateNormal]; 
-
-//设置Normal状态边线厚度
-[button setBorderWidth:1 forState:UIControlStateNormal]; 
-
-//设置Normal状态下，左图片右文字布局，间距为8pt
-[button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageTitleSpace:8 forState:UIControlStateNormal]; 
-
-//设置Normal状态下，左图片右文字布局，间距为8pt，图片大小为12pt 12pt
-[button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageTitleSpace:8 imageSize:CGSizeMake(12, 12) forState:UIControlStateNormal]; 
-
-//设置Normal状态下，左图片右文字布局，图片大小为12pt 12pt,间距为8pt
-[button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageSize:CGSizeMake(12, 12) imageConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 8) labelConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 0) forState:UIControlStateNormal]; 
-
-//selected状态只有文字
-[button layoutButtonWithLabelConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 0) forState:UIControlStateSelected];
-
-//selected状态只有图片
-[button layoutButtonWithImageConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 0) forState:UIControlStateSelected];
-
-//设置圆角为8pt
-[button layoutButtonWithRadiusType:ZYButtonCornerRadiusTypeAll cornerRadius:8];
- 
-```
-
-## 更多
-```objc
 // 定义一个枚举（包含了四种类型的button）
 typedef NS_ENUM(NSUInteger, ZYButtonEdgeInsetsStyle) {
     ZYButtonEdgeInsetsStyleTop, // image在上，label在下
@@ -95,11 +60,15 @@ typedef NS_ENUM(NSUInteger, ZYButtonCornerRadiusType) {
 
 //只有label
 - (void)layoutButtonWithLabelConstraintEdge:(UIEdgeInsets)labelConstraintEdge forState:(UIControlState)state;
-//只有image
-- (void)layoutButtonWithImageConstraintEdge:(UIEdgeInsets)imageConstraintEdge forState:(UIControlState)state;
 
+//只有image
+- (void)layoutButtonWithImageConstraintEdge:(UIEdgeInsets)imageConstraintEdge imageSize:(CGSize)imageSize forState:(UIControlState)state;
+
+//设置圆角
 - (void)layoutButtonWithRadiusType:(ZYButtonCornerRadiusType)radiusType cornerRadius:(CGFloat)cornerRadius;
 
+//刷新圆角
 - (void)layoutRadiusType;
 @end
-```
+
+NS_ASSUME_NONNULL_END

@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C67E6F5F79A5027C144B7BA /* libPods-ZYButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AF1359045E09A8C2DA5DC6 /* libPods-ZYButton.a */; };
+		FDD278C92786EB2A006FF252 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278C82786EB2A006FF252 /* AppDelegate.m */; };
+		FDD278CC2786EB2A006FF252 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278CB2786EB2A006FF252 /* SceneDelegate.m */; };
+		FDD278CF2786EB2A006FF252 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278CE2786EB2A006FF252 /* ViewController.m */; };
+		FDD278D22786EB2A006FF252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD278D02786EB2A006FF252 /* Main.storyboard */; };
+		FDD278D42786EB2B006FF252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD278D32786EB2B006FF252 /* Assets.xcassets */; };
+		FDD278D72786EB2B006FF252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD278D52786EB2B006FF252 /* LaunchScreen.storyboard */; };
+		FDD278DA2786EB2B006FF252 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278D92786EB2B006FF252 /* main.m */; };
+		FDD278E42786EB2B006FF252 /* ZYButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278E32786EB2B006FF252 /* ZYButtonTests.m */; };
+		FDD278EE2786EB2B006FF252 /* ZYButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278ED2786EB2B006FF252 /* ZYButtonUITests.m */; };
+		FDD278F02786EB2B006FF252 /* ZYButtonUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278EF2786EB2B006FF252 /* ZYButtonUITestsLaunchTests.m */; };
+		FDD278FF2786EB66006FF252 /* ZYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD278FE2786EB66006FF252 /* ZYButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDD278E02786EB2B006FF252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD278BC2786EB2A006FF252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD278C32786EB2A006FF252;
+			remoteInfo = ZYButton;
+		};
+		FDD278EA2786EB2B006FF252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD278BC2786EB2A006FF252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD278C32786EB2A006FF252;
+			remoteInfo = ZYButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61AF1359045E09A8C2DA5DC6 /* libPods-ZYButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA119358D3B6FA304DBD395 /* Pods-ZYButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYButton.release.xcconfig"; path = "Target Support Files/Pods-ZYButton/Pods-ZYButton.release.xcconfig"; sourceTree = "<group>"; };
+		BD5284317B5557977CDA200C /* Pods-ZYButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYButton.debug.xcconfig"; path = "Target Support Files/Pods-ZYButton/Pods-ZYButton.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD278C42786EB2A006FF252 /* ZYButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD278C72786EB2A006FF252 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDD278C82786EB2A006FF252 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDD278CA2786EB2A006FF252 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FDD278CB2786EB2A006FF252 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FDD278CD2786EB2A006FF252 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDD278CE2786EB2A006FF252 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDD278D12786EB2A006FF252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDD278D32786EB2B006FF252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDD278D62786EB2B006FF252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDD278D82786EB2B006FF252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD278D92786EB2B006FF252 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDD278DF2786EB2B006FF252 /* ZYButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD278E32786EB2B006FF252 /* ZYButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYButtonTests.m; sourceTree = "<group>"; };
+		FDD278E92786EB2B006FF252 /* ZYButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD278ED2786EB2B006FF252 /* ZYButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYButtonUITests.m; sourceTree = "<group>"; };
+		FDD278EF2786EB2B006FF252 /* ZYButtonUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYButtonUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FDD278FD2786EB66006FF252 /* ZYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYButton.h; sourceTree = "<group>"; };
+		FDD278FE2786EB66006FF252 /* ZYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDD278C12786EB2A006FF252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C67E6F5F79A5027C144B7BA /* libPods-ZYButton.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278DC2786EB2B006FF252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278E62786EB2B006FF252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B092D2D99D464DFC4BF097DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD5284317B5557977CDA200C /* Pods-ZYButton.debug.xcconfig */,
+				9FA119358D3B6FA304DBD395 /* Pods-ZYButton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EECC6DA6CCB70188C399713E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61AF1359045E09A8C2DA5DC6 /* libPods-ZYButton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDD278BB2786EB2A006FF252 = {
+			isa = PBXGroup;
+			children = (
+				FDD278FC2786EB33006FF252 /* Classes */,
+				FDD278C62786EB2A006FF252 /* ZYButton */,
+				FDD278E22786EB2B006FF252 /* ZYButtonTests */,
+				FDD278EC2786EB2B006FF252 /* ZYButtonUITests */,
+				FDD278C52786EB2A006FF252 /* Products */,
+				B092D2D99D464DFC4BF097DA /* Pods */,
+				EECC6DA6CCB70188C399713E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDD278C52786EB2A006FF252 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDD278C42786EB2A006FF252 /* ZYButton.app */,
+				FDD278DF2786EB2B006FF252 /* ZYButtonTests.xctest */,
+				FDD278E92786EB2B006FF252 /* ZYButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDD278C62786EB2A006FF252 /* ZYButton */ = {
+			isa = PBXGroup;
+			children = (
+				FDD278C72786EB2A006FF252 /* AppDelegate.h */,
+				FDD278C82786EB2A006FF252 /* AppDelegate.m */,
+				FDD278CA2786EB2A006FF252 /* SceneDelegate.h */,
+				FDD278CB2786EB2A006FF252 /* SceneDelegate.m */,
+				FDD278CD2786EB2A006FF252 /* ViewController.h */,
+				FDD278CE2786EB2A006FF252 /* ViewController.m */,
+				FDD278D02786EB2A006FF252 /* Main.storyboard */,
+				FDD278D32786EB2B006FF252 /* Assets.xcassets */,
+				FDD278D52786EB2B006FF252 /* LaunchScreen.storyboard */,
+				FDD278D82786EB2B006FF252 /* Info.plist */,
+				FDD278D92786EB2B006FF252 /* main.m */,
+			);
+			path = ZYButton;
+			sourceTree = "<group>";
+		};
+		FDD278E22786EB2B006FF252 /* ZYButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD278E32786EB2B006FF252 /* ZYButtonTests.m */,
+			);
+			path = ZYButtonTests;
+			sourceTree = "<group>";
+		};
+		FDD278EC2786EB2B006FF252 /* ZYButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD278ED2786EB2B006FF252 /* ZYButtonUITests.m */,
+				FDD278EF2786EB2B006FF252 /* ZYButtonUITestsLaunchTests.m */,
+			);
+			path = ZYButtonUITests;
+			sourceTree = "<group>";
+		};
+		FDD278FC2786EB33006FF252 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FDD278FD2786EB66006FF252 /* ZYButton.h */,
+				FDD278FE2786EB66006FF252 /* ZYButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDD278C32786EB2A006FF252 /* ZYButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD278F32786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButton" */;
+			buildPhases = (
+				31944E22F159611555DE03A4 /* [CP] Check Pods Manifest.lock */,
+				FDD278C02786EB2A006FF252 /* Sources */,
+				FDD278C12786EB2A006FF252 /* Frameworks */,
+				FDD278C22786EB2A006FF252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYButton;
+			productName = ZYButton;
+			productReference = FDD278C42786EB2A006FF252 /* ZYButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDD278DE2786EB2B006FF252 /* ZYButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD278F62786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButtonTests" */;
+			buildPhases = (
+				FDD278DB2786EB2B006FF252 /* Sources */,
+				FDD278DC2786EB2B006FF252 /* Frameworks */,
+				FDD278DD2786EB2B006FF252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD278E12786EB2B006FF252 /* PBXTargetDependency */,
+			);
+			name = ZYButtonTests;
+			productName = ZYButtonTests;
+			productReference = FDD278DF2786EB2B006FF252 /* ZYButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDD278E82786EB2B006FF252 /* ZYButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD278F92786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButtonUITests" */;
+			buildPhases = (
+				FDD278E52786EB2B006FF252 /* Sources */,
+				FDD278E62786EB2B006FF252 /* Frameworks */,
+				FDD278E72786EB2B006FF252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD278EB2786EB2B006FF252 /* PBXTargetDependency */,
+			);
+			name = ZYButtonUITests;
+			productName = ZYButtonUITests;
+			productReference = FDD278E92786EB2B006FF252 /* ZYButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDD278BC2786EB2A006FF252 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FDD278C32786EB2A006FF252 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FDD278DE2786EB2B006FF252 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FDD278C32786EB2A006FF252;
+					};
+					FDD278E82786EB2B006FF252 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FDD278C32786EB2A006FF252;
+					};
+				};
+			};
+			buildConfigurationList = FDD278BF2786EB2A006FF252 /* Build configuration list for PBXProject "ZYButton" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDD278BB2786EB2A006FF252;
+			productRefGroup = FDD278C52786EB2A006FF252 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDD278C32786EB2A006FF252 /* ZYButton */,
+				FDD278DE2786EB2B006FF252 /* ZYButtonTests */,
+				FDD278E82786EB2B006FF252 /* ZYButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDD278C22786EB2A006FF252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD278D72786EB2B006FF252 /* LaunchScreen.storyboard in Resources */,
+				FDD278D42786EB2B006FF252 /* Assets.xcassets in Resources */,
+				FDD278D22786EB2A006FF252 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278DD2786EB2B006FF252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278E72786EB2B006FF252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31944E22F159611555DE03A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDD278C02786EB2A006FF252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD278FF2786EB66006FF252 /* ZYButton.m in Sources */,
+				FDD278CF2786EB2A006FF252 /* ViewController.m in Sources */,
+				FDD278C92786EB2A006FF252 /* AppDelegate.m in Sources */,
+				FDD278DA2786EB2B006FF252 /* main.m in Sources */,
+				FDD278CC2786EB2A006FF252 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278DB2786EB2B006FF252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD278E42786EB2B006FF252 /* ZYButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD278E52786EB2B006FF252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD278EE2786EB2B006FF252 /* ZYButtonUITests.m in Sources */,
+				FDD278F02786EB2B006FF252 /* ZYButtonUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDD278E12786EB2B006FF252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD278C32786EB2A006FF252 /* ZYButton */;
+			targetProxy = FDD278E02786EB2B006FF252 /* PBXContainerItemProxy */;
+		};
+		FDD278EB2786EB2B006FF252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD278C32786EB2A006FF252 /* ZYButton */;
+			targetProxy = FDD278EA2786EB2B006FF252 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDD278D02786EB2A006FF252 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD278D12786EB2A006FF252 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDD278D52786EB2B006FF252 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD278D62786EB2B006FF252 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDD278F12786EB2B006FF252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDD278F22786EB2B006FF252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDD278F42786EB2B006FF252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5284317B5557977CDA200C /* Pods-ZYButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZYButton/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDD278F52786EB2B006FF252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA119358D3B6FA304DBD395 /* Pods-ZYButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZYButton/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDD278F72786EB2B006FF252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYButton.app/ZYButton";
+			};
+			name = Debug;
+		};
+		FDD278F82786EB2B006FF252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYButton.app/ZYButton";
+			};
+			name = Release;
+		};
+		FDD278FA2786EB2B006FF252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYButton;
+			};
+			name = Debug;
+		};
+		FDD278FB2786EB2B006FF252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6A23453T4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDD278BF2786EB2A006FF252 /* Build configuration list for PBXProject "ZYButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD278F12786EB2B006FF252 /* Debug */,
+				FDD278F22786EB2B006FF252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD278F32786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD278F42786EB2B006FF252 /* Debug */,
+				FDD278F52786EB2B006FF252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD278F62786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD278F72786EB2B006FF252 /* Debug */,
+				FDD278F82786EB2B006FF252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD278F92786EB2B006FF252 /* Build configuration list for PBXNativeTarget "ZYButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD278FA2786EB2B006FF252 /* Debug */,
+				FDD278FB2786EB2B006FF252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDD278BC2786EB2A006FF252 /* Project object */;
+}

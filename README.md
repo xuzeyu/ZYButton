@@ -2,12 +2,12 @@
 
 ## 介绍
 原生UIButton 图片和文字布局是使用contentEdgeInsets和imageEdgeInsets参数设置，需要计算文字和图片的上下内边距，不好计算，不好维护。
-ZYButton 是对 UIButton的封装库，采用UIButton上面添加UILabel和UIImagevView的方式来实现原生contentEdgeInsets和imageEdgeInsets的功能布局，使用维护简单，功能丰富。
+ZYButton 是对 UIButton的封装库，采用UIButton上面添加UILabel和UIImagevView的方式来实现原生contentEdgeInsets和imageEdgeInsets的功能布局，使用维护简单，功能丰富。支持自定义UIImagevView和UILabel的四边间距，UIImagevView图片自定义大小，还支持设置各种按钮状态背景颜色，边框线等
 
 ## 如何导入
 ```
-pod 'ZYButton', :git => 'https://github.com/xuzeyu/ZYButton.git' 
-pod 'ZYButton', :git => 'https://github.com/xuzeyu/ZYButton.git', :tag => '1.0.0'
+pod 'ZYButton'
+
 ```
 
 ## 如何使用

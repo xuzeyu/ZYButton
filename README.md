@@ -6,8 +6,8 @@ ZYButton 是对 UIButton的封装库，采用UIButton上面添加UILabel和UIIma
 
 ## 如何导入
 ```
-pod 'ZYButton', :git => 'http://5dmg.cc:9997/xuzy/ZYButton.git' 
-pod 'ZYButton', :git => 'http://5dmg.cc:9997/xuzy/ZYButton.git', :tag => '0.0.1'
+pod 'ZYButton', :git => 'https://github.com/xuzeyu/ZYButton.git' 
+pod 'ZYButton', :git => 'https://github.com/xuzeyu/ZYButton.git', :tag => '1.0.0'
 ```
 
 ## 如何使用
@@ -31,6 +31,12 @@ ZYButton *button = [ZYButton buttonWithType:UIButtonTypeCustom];
 
 //设置Normal状态下，左图片右文字布局，图片大小为12pt 12pt,间距为8pt
 [button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageSize:CGSizeMake(12, 12) imageConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 8) labelConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 0) forState:UIControlStateNormal]; 
+
+//设置Normal状态下，左图片右文字布局，图片大小为12pt 12pt,间距为8pt，整体居中向左偏移8pt
+[button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageSize:CGSizeMake(12, 12) imageConstraintEdge:UIEdgeInsetsMake(0, -8, 0, 0) labelConstraintEdge:UIEdgeInsetsMake(0, 8, 0, 0) forState:UIControlStateNormal]; 
+
+//设置Normal状态下，左图片右文字布局，图片大小为12pt 12pt,间距为8pt，整体居中向右偏移8pt
+[button layoutButtonWithEdgeInsetsStyle:ZYButtonEdgeInsetsStyleLeft imageSize:CGSizeMake(12, 12) imageConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 8) labelConstraintEdge:UIEdgeInsetsMake(0, 0, 0, -8) forState:UIControlStateNormal]; 
 
 //selected状态只有文字
 [button layoutButtonWithLabelConstraintEdge:UIEdgeInsetsMake(0, 0, 0, 0) forState:UIControlStateSelected];
@@ -97,9 +103,9 @@ typedef NS_ENUM(NSUInteger, ZYButtonCornerRadiusType) {
 - (void)layoutButtonWithLabelConstraintEdge:(UIEdgeInsets)labelConstraintEdge forState:(UIControlState)state;
 //只有image
 - (void)layoutButtonWithImageConstraintEdge:(UIEdgeInsets)imageConstraintEdge forState:(UIControlState)state;
-
+//设置圆角
 - (void)layoutButtonWithRadiusType:(ZYButtonCornerRadiusType)radiusType cornerRadius:(CGFloat)cornerRadius;
-
+//刷新圆角
 - (void)layoutRadiusType;
 @end
 ```

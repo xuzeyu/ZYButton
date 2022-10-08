@@ -16,7 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZYButton"
-  spec.summary      = "对UIButton的封装"
+  spec.version      = "1.0.0"
+  spec.summary      = "ZYButton 是对 UIButton的封装库，采用UIButton上面添加UILabel和UIImagevView的方式来实现原生contentEdgeInsets和imageEdgeInsets的功能布局，使用维护简单，功能丰富。"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -88,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes/**/*"
+  spec.source_files  = "ZYButton/Classes/**/*"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

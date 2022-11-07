@@ -627,7 +627,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.left > 0 && labelConstraintEdge.right > 0) {
                     make.left.mas_equalTo(imageConstraintEdge.left);
-                    make.bottom.mas_equalTo(-labelConstraintEdge.right);
+                    make.right.mas_equalTo(-labelConstraintEdge.right);
                 }else if (imageConstraintEdge.left > 0 && labelConstraintEdge.right == 0) {
                     make.left.mas_equalTo(imageConstraintEdge.left);
                 }else if (imageConstraintEdge.left == 0 && labelConstraintEdge.right > 0) {
@@ -661,6 +661,12 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                     if (!CGSizeEqualToSize(CGSizeZero, imageSize)) {
                         make.width.mas_equalTo(imageWith);
                     }
+                }else if (imageConstraintEdge.top > 0 && imageConstraintEdge.bottom == 0){
+                    make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
+                    make.top.mas_equalTo(imageConstraintEdge.top);
+                }else if (imageConstraintEdge.top == 0 && imageConstraintEdge.bottom > 0){
+                    make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
+                    make.bottom.mas_equalTo(-imageConstraintEdge.bottom);
                 }else {
                     make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
                     make.centerY.mas_equalTo(1).offset(imageConstraintEdge.top + imageConstraintEdge.bottom);
@@ -748,7 +754,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (labelConstraintEdge.left > 0 && imageConstraintEdge.right > 0) {
                     make.left.mas_equalTo(labelConstraintEdge.left);
-                    make.bottom.mas_equalTo(-imageConstraintEdge.right);
+                    make.right.mas_equalTo(-imageConstraintEdge.right);
                 }else if (labelConstraintEdge.left > 0 && imageConstraintEdge.right == 0) {
                     make.left.mas_equalTo(labelConstraintEdge.left);
                 }else if (labelConstraintEdge.left == 0 && imageConstraintEdge.right > 0) {
@@ -789,6 +795,12 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                     if (!CGSizeEqualToSize(CGSizeZero, imageSize)) {
                         make.width.mas_equalTo(imageWith);
                     }
+                }else if (imageConstraintEdge.top > 0 && imageConstraintEdge.bottom == 0){
+                    make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
+                    make.top.mas_equalTo(imageConstraintEdge.top);
+                }else if (imageConstraintEdge.top == 0 && imageConstraintEdge.bottom > 0){
+                    make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
+                    make.bottom.mas_equalTo(-imageConstraintEdge.bottom);
                 }else {
                     make.size.mas_equalTo(CGSizeMake(imageWith, imageHeight));
                     make.centerY.mas_equalTo(1).offset(imageConstraintEdge.top + imageConstraintEdge.bottom);

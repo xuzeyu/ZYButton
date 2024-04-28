@@ -934,6 +934,10 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                 corner = UIRectCornerBottomRight;
             }else if (self.radiusType == ZYButtonCornerRadiusTypeTopLeftAndTopRight) {
                 corner = UIRectCornerTopLeft | UIRectCornerTopRight;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeTopLeftAndBottomLeft) {
+                corner = UIRectCornerTopLeft | UIRectCornerBottomLeft;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeTopRightAndBottomRight) {
+                corner = UIRectCornerTopRight | UIRectCornerBottomRight;
             }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomLeftAndBottomRight) {
                 corner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
             }else {

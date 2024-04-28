@@ -25,6 +25,8 @@ typedef NS_ENUM(NSUInteger, ZYButtonCornerRadiusType) {
     ZYButtonCornerRadiusTypeBottomLeft,
     ZYButtonCornerRadiusTypeBottomRight,
     ZYButtonCornerRadiusTypeTopLeftAndTopRight,
+    ZYButtonCornerRadiusTypeTopLeftAndBottomLeft,
+    ZYButtonCornerRadiusTypeTopRightAndBottomRight,
     ZYButtonCornerRadiusTypeBottomLeftAndBottomRight,
     ZYButtonCornerRadiusTypeAll
 };

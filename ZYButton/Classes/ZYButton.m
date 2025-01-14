@@ -120,8 +120,8 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
         [self addObserver:self forKeyPath:self.keyValueObservingOptionNew[i] options:NSKeyValueObservingOptionNew context:nil];
     }
     [self addTarget:self action:@selector(touchDown:) forControlEvents:UIControlEventTouchDown];
-    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside];
-    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpOutside];
+    [self addTarget:self action:@selector(touchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [self addTarget:self action:@selector(touchUpOutside:) forControlEvents:UIControlEventTouchUpOutside];
 }
 
 - (instancetype)init
@@ -849,15 +849,28 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
 }
 
 #pragma mark - Acion
-- (void)touchDown:(UIButton *)sender {
+- (void)touchDown:(ZYButton *)sender {
     if (!sender.selected && self.isAutoHighlighted) {
         [self refreshWithState:UIControlStateHighlighted];
         self.zy_highlightedView.hidden = NO;
     }
+    if (self.touchDown) {
+        self.touchDown(sender);
+    }
 }
 
-- (void)touchUp:(UIButton *)sender {
+- (void)touchUpInside:(ZYButton *)sender {
     self.zy_highlightedView.hidden = YES;
+    if (self.touchUpInside) {
+        self.touchUpInside(sender);
+    }
+}
+
+- (void)touchUpOutside:(ZYButton *)sender {
+    self.zy_highlightedView.hidden = YES;
+    if (self.touchUpOutside) {
+        self.touchUpOutside(sender);
+    }
 }
 
 #pragma mark - Other

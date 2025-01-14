@@ -38,6 +38,9 @@ typedef NS_ENUM(NSUInteger, ZYButtonCornerRadiusType) {
 
 @property (nonatomic, assign) BOOL isAutoHighlighted;//默认增加高亮蒙版功能
 @property (nonatomic, assign) BOOL zy_userInteractionEnabled; //默认为YES，NO的话忽略当前button的触摸事件，但不忽略button上面的子view事件
+@property (nonatomic, copy, nullable) void(^touchDown)(ZYButton *sender);
+@property (nonatomic, copy, nullable) void(^touchUpInside)(ZYButton *sender);
+@property (nonatomic, copy, nullable) void(^touchUpOutside)(ZYButton *sender);
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 

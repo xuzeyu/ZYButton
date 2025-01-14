@@ -864,12 +864,18 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
     if (self.touchUpInside) {
         self.touchUpInside(sender);
     }
+    if (self.touchUp) {
+        self.touchUp(sender);
+    }
 }
 
 - (void)touchUpOutside:(ZYButton *)sender {
     self.zy_highlightedView.hidden = YES;
     if (self.touchUpOutside) {
         self.touchUpOutside(sender);
+    }
+    if (self.touchUp) {
+        self.touchUp(sender);
     }
 }
 

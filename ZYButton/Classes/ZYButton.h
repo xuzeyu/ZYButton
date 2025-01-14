@@ -41,6 +41,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonCornerRadiusType) {
 @property (nonatomic, copy, nullable) void(^touchDown)(ZYButton *sender);
 @property (nonatomic, copy, nullable) void(^touchUpInside)(ZYButton *sender);
 @property (nonatomic, copy, nullable) void(^touchUpOutside)(ZYButton *sender);
+@property (nonatomic, copy, nullable) void(^touchUp)(ZYButton *sender);
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 

@@ -481,10 +481,16 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
     }];
     
     if (UIEdgeInsetsEqualToEdgeInsets(imageConstraintEdge, UIEdgeInsetsZero)) {
-        [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.center.mas_equalTo(1);
-            make.size.mas_equalTo(imageSize);
-        }];
+        if (CGSizeEqualToSize(CGSizeZero, imageSize)) {
+            [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(0);
+            }];
+        }else {
+            [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.center.mas_equalTo(1);
+                make.size.mas_equalTo(imageSize);
+            }];
+        }
     }else {
         [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
             if (CGSizeEqualToSize(CGSizeZero, imageSize)) {
